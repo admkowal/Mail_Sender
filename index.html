@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Mail</title>
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      
+      <div class="row">
+        <div id="displayInfo" class="alert col-xs-6 col-xs-offset-3" role="alert"></div>
+      </div>
+
+      <form id="form" action="mail.php" method="POST">
+        <h4 class="text-center">Mail Sender (AJAX + PHP)</h4>
+    
+      <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+          <input type="text" class="form-control" name="your-name" placeholder="Name">
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+          <input type="email" class="form-control" name="your-email" placeholder="Email">
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+          <textarea type="text" class="form-control" name="your-message" rows="3" placeholder="Message"></textarea>
+        </div>
+      </div>
+    
+      <button type="submit" class="btn btn-primary center-block" name="btnSubmit">Submit</button>
+      </form>
+    </div>
+    
+    <script src="js/ajax.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
